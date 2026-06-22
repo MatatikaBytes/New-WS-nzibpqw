@@ -1,6 +1,6 @@
 version: pipelines/v0.1
 label: Postgres Warehouse
-schedule: '@daily'
+schedule: 1 * * * *
 timeout: 0
 max_retries: 0
 script: |-
