@@ -1,0 +1,10 @@
+version: pipelines/v0.1
+label: Postgres Warehouse
+schedule: '@daily'
+timeout: 0
+max_retries: 0
+script: |-
+  meltano invoke target-postgres
+  echo 'hello world'
+data_components:
+- Warehouse
